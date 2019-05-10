@@ -21,7 +21,7 @@ class QuestionsController extends AppController
         $this->set('names', $this->Name->find('all'));
         $this->set('questionschoicesreasons', $this->QuestionsChoicesReason->find('all'));
         $this->set('numberquestionsanswers', $this->NumberQuestionsAnswer->find('all'));
-        // $this->set('title_for_layout', 'CRM関連用語問題集');
+        $this->set('title_for_layout', 'CRM関連用語問題集');
 
         // チェックされた情報を配列として渡す
         $result = $this->request->query();
